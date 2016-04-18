@@ -1,0 +1,78 @@
+/*	Keila Bowers
+	ASL 201603
+	Biblio Slate Style Sheet
+
+	Photo Credits:
+		https://flic.kr/p/6Dpfff
+		https://flic.kr/p/7PozJp
+*/
+
+.navbar-brand {
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	color: rgb(97,85,115) !important;
+
+}
+ 
+.jumbotron {
+	background: 
+	linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+	url('../images/books.jpg');
+	font-family: 'Oswald', sans-serif;
+	color: #FFF;	
+}
+
+.jumbotron h1{
+	text-transform: uppercase;
+}
+
+.btn-primary {
+	background: rgba(97,85,115,1);
+	border: none;
+} 
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:target, .clicked, .btn-success:active:focus {
+	background: rgba(129,116,150,1) !important;
+}
+
+.sidebar, .thumbnail {
+	background: rgba(97,85,115,1);
+	padding: 20px;
+	border: none;
+	border-radius: 5px;
+	margin-bottom: 0;
+	color: white;
+
+}
+
+
+.sidebar ul {
+	padding: 20px;
+	border-top: solid black;
+}
+
+.sidebar li {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+}
+
+.sidebar a {
+	color: white;
+}
+
+.nav-tabs > li > a{
+	color: #000;
+}
+
+.nav-tabs > li > a:hover {
+	background: rgba(129,116,150,.5) !important;
+}
+
+.test{
+	font-size: 32px;
+
+}
+
+
+
+
