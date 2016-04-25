@@ -12,6 +12,6 @@
 </div> -->
 
 @endsection 
-
+ 
 @include('auth.login')
 

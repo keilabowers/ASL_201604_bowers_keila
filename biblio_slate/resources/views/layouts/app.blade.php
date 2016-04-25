@@ -65,6 +65,7 @@
         @endif
 
         @yield('content')
+        
     </div>
 
     <!-- JavaScripts -->

@@ -7,6 +7,11 @@
 		https://flic.kr/p/7PozJp
 */
 
+a {
+	text-decoration: none;
+	color: #000;
+}
+
 .navbar-brand {
 	font-family: 'Oswald', sans-serif;
 	font-size: 32px;
@@ -70,8 +75,37 @@
 
 .test{
 	font-size: 32px;
-
 }
+
+.radio h4 {
+	display: inline;
+	margin: 0;
+	padding-right: 10px;
+}
+
+.radio label {
+	padding-right: 20px;
+	font-size: .5em;
+}
+
+.shelf {
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+}
+
+dl {
+	margin: 0;
+}
+
+.shelf a {
+
+	color: #fff;
+	padding: 5px;
+	background: rgb(97,85,115);
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
 
 
 
