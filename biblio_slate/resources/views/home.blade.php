@@ -15,18 +15,20 @@
                 </div>
 
                 <ul class="list-unstyled">
-                    <li ><a href="{{ url('/home') }}">Dashboard</a></li>
+                    <li ><a href="{{ url('/dashboard') }}">Dashboard</a></li>
                     <li ><a href="{{ url('/bookshelf') }}">Bookshelf</a></li>
                     <li ><a href="{{ url('/library') }}">Library</a></li>
                 </ul>               
             </div>
 
-            <div class="col-md-8 test pull-right">
+            <div class="col-md-8 test pull-right container-fluid">
                 
                 @if (Auth::user())
                     @yield('bookshelf')
                     @yield('library')
                     @yield('edit')
+                    @yield('dashboard')
+                    @yield('search')
 
                 @endif
             

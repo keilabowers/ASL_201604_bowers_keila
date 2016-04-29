@@ -1,4 +1,4 @@
-@extends('library.library')
+@extends('home')
 
 @section('search')
 	<h2>Search Results</h2>
@@ -12,4 +12,4 @@
     	@endforeach
     @endif
 
-@endsection
+@endsection 

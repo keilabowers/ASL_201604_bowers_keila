@@ -40,18 +40,18 @@
 		</div>
 	</form>
 
-	@foreach ($userbooks as $userbook)
 	<div class="shelf">
-		<dl>
-			<dt>{{ $userbook->books->title }}</dt>
-			<dl>Author: {{ $userbook->books->author }}</dl>
-			<dl>ISBN: {{ $userbook->books->isbn }}</dl>
-			<dl>Own: {{ $userbook->owned ? 'Yes' : 'No' }}</dl> 
-			<dl>Read: {{ $userbook->read ? 'Yes' : 'No' }}</dl>
-			<dl>Wish to Read: {{ $userbook->wishlist ? 'Yes' : 'No' }}</dl><a href="/bookshelf/{{ $userbook->id }}/edit">Update | Remove</a></li>		
-		</dl>
+		@foreach ($userbooks as $userbook)
+			<dl>
+				<dt>{{ $userbook->books->title }}</dt> 
+				<dd>Author: {{ $userbook->books->author }}</dd>
+				<dd>ISBN: {{ $userbook->books->isbn }}</dd>
+				<dd>Own: {{ $userbook->owned ? 'Yes' : 'No' }}</dd> 
+				<dd>Read: {{ $userbook->read ? 'Yes' : 'No' }}</dd>
+				<dd>Wish to Read: {{ $userbook->wishlist ? 'Yes' : 'No' }}</dd><a href="/bookshelf/{{ $userbook->id }}/edit">Update | Remove</a></li>		
+			</dl>
+		@endforeach
 	</div>
-	@endforeach
 
 @endsection
 

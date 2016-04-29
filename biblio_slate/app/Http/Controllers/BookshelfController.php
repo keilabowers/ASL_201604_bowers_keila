@@ -15,7 +15,6 @@ class BookshelfController extends Controller
 
         $user = Auth::user()->id;
         $userbooks = UserBook::with(['users', 'books'])->where('user', '=', $user)->get();
-     
     	return view('bookshelf.bookshelf', compact('userbooks'));
     }
 

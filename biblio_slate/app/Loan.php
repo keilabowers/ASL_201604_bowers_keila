@@ -12,6 +12,8 @@ class Loan extends Model
         'userbook_id', 'requested_user', 'loan_start_date', 'due_date', 'returned',
     ];
 
-
+    public function userbook(){
+        return $this->belongsTo('App\UserBook', 'userbook_id');
+    } 
 
 }

@@ -20,7 +20,9 @@ class UserBook extends Model
     	return $this->belongsTo('App\Book', 'book');
     }
 
-
+    public function loans(){
+        return $this->hasMany('App\Loan', 'userbook_id'); 
+    } 
 
 
 }

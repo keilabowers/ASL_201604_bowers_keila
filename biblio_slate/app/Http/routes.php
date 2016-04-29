@@ -31,6 +31,8 @@
  	/* Library Routes */
 	Route::get('/library', 'LibraryController@index');
 	Route::post('/search', 'LibraryController@search');
-	Route::get('/library/{userbook}', 'LibraryController@show');
+	Route::get('/library/{userbook}', 'LibraryController@loan');
 	Route::post('/library/{userbook}', 'LibraryController@store');
 	Route::get('/library/{loan}/return', 'LibraryController@return');
+
+	Route::get('/dashboard', 'DashboardController@index');

@@ -7,6 +7,10 @@
 		https://flic.kr/p/7PozJp
 */
 
+.event a {
+	background-color: red !important;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -95,15 +99,41 @@ a {
 
 dl {
 	margin: 0;
+	padding: 10px;
 }
 
-.shelf a {
+dl:nth-of-type(odd) {
+	background-color: rgba(97,85,115,.4);
+}
 
+
+
+.shelf a {
 	color: #fff;
 	padding: 5px;
 	background: rgb(97,85,115);
 	border-radius: 5px;
 	margin-bottom: 10px;
+}
+
+.inline h2, .inline p {
+	display:inline;
+	padding-right: 10px;
+}
+
+#randomRead {
+	background: rgba(0,153,0,.6);
+	border-radius: 5px;
+	padding: 10px;
+	color: #FFF;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+.ui-datepicker { 
+	font-size: 62.5%; 
 }
 
 
